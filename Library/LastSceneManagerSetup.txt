@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scence/sanple01.unity
+- path: Assets/Scence/Scence_sea.unity
   isLoaded: 1
   isActive: 1
