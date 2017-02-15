@@ -48,6 +48,17 @@ public class Player : MonoBehaviour {
         {
             rigidbody.AddForce(transform.forward  * updown * back_power);
         }
+        //rigidbody.AddForce((-1) * rigidbody.velocity * 0.5 * (rigidbody.mass * 0.5));
+        // 1. 速度の取得の例
+        // Aキーを推したら
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            // 速度ベクトルを表示
+            Debug.Log("速度ベクトル: " + rigidbody.velocity);
+
+            // 速度を表示
+            Debug.Log("速度: " + rigidbody.velocity.magnitude);
+        }
         //gidbody.AddForce(transform.forward * (-1));
     }
 }

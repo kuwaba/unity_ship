@@ -12,7 +12,7 @@ public class Gun : MonoBehaviour {
     void Start () {
         targetObj = GameObject.Find("CharCamera");
         //targetPos = targetObj.transform.position;
-        targetRote = targetObj.transform.rotation;
+        targetRote = new Quaternion(0, 0, 0, targetObj.transform.rotation.w);
     }
 
     // Update is called once per frame
@@ -20,6 +20,10 @@ public class Gun : MonoBehaviour {
         //transform.rotation =   targetRote;
         //transform.rotation = Quaternion.FromToRotation(targetObj.transform.up, transform.transform.up);
         var diff = (targetObj.transform.position - transform.position).normalized;
-        transform.rotation = Quaternion.FromToRotation(Vector3.back, diff);
+        var diffy = targetObj.transform.eulerAngles.y - transform.eulerAngles.y;
+
+        //transform.Rotate(new Vector3(transform.eulerAngles.x, targetObj.transform.eulerAngles.y, transform.eulerAngles.z));
+        //transform.rotation = Quaternion.FromToRotation(Vector3.back, diff);
+        transform.Rotate(new Vector3(0,1,0), diffy);
     }
 }
