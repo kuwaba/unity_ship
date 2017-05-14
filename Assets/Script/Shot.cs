@@ -11,6 +11,7 @@ public class Shot : MonoBehaviour {
     void Update()
     {
 
+        //TrajectoryCalculate.Force(transform.position, force, shellPrefab.rigidbody.mass, Physics.gravity, 1, time);
         // もしも「Fire1」というボタンが押されたら（条件）
         if (Input.GetButtonDown("Fire1"))
         {

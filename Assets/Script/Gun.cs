@@ -25,5 +25,6 @@ public class Gun : MonoBehaviour {
         //transform.Rotate(new Vector3(transform.eulerAngles.x, targetObj.transform.eulerAngles.y, transform.eulerAngles.z));
         //transform.rotation = Quaternion.FromToRotation(Vector3.back, diff);
         transform.Rotate(new Vector3(0,1,0), diffy);
+
     }
 }
