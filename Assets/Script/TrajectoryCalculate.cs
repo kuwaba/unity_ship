@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour{
-
 
     /// <summary>
     /// Trajectory calculate.
@@ -73,4 +71,4 @@ public class NewBehaviourScript : MonoBehaviour{
             return start + new Vector3(positionX, positionY, positionZ);
         }
     }
-}
+
