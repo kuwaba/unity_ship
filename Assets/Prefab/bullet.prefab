@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11c328e31f6f68f4c9d50b638b4e3790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ExploadObj: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
   speed: 10
 --- !u!135 &135259897692098288
 SphereCollider:
